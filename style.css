@@ -1,0 +1,79 @@
+body {
+    background-color: #1ae5e0;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+/* header bar */
+.search-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 30px;
+
+    color: antiquewhite;
+
+    margin-bottom: 100px;
+}
+
+
+.search-bar {
+    width: 40%;
+}
+
+.search-icon {
+    font-size: 30px;
+}
+
+/* Button Area */
+.censor-section {
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+}
+
+#censor-button {
+    position: relative;
+
+    font-size: 150px;
+    background-color: transparent;
+
+    border: transparent;
+
+}
+
+#censor-text {
+
+}
+
+/* Button hover animation */
+#censor-button:hover {
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bounce {
+    from {
+        top: 0px;
+    }
+    to {
+        top: -50px;
+    }
+}
+
+/* music section */
+.music-section {
+    text-align: center;
+}
+#song-clean{
+    visibility:hidden;
+}
+
+#song-xxx{
+    visibility: visible;
+}

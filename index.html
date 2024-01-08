@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Bleep - Song Censorizor</title>
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/7942b35379.js" crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- top bar -->
+    <div class="search-section">
+        <h1 class="search-logo">BLEEP</h1>
+        <input class="search-bar" type="text" placeholder="search (coming soon!)">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+    </div>
+
+    <!-- censor button -->
+    <div class="censor-section">
+        <button id="censor-button">🤬</button>
+        <h1 id="censor-text">Censor: Off</h1>
+    </div>
+
+    <!-- music player -->
+    <div class="music-section">
+        <audio id="song-xxx" preload="auto" controls src="audios/i-dont-fuck-with-you-idfwu.mp3"></audio>
+
+        <audio id="song-clean" preload="auto" controls  muted src="audios/i-dont-fuck-with-you-clean.mp3"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
